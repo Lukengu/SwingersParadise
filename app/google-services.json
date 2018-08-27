@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "686511134534",
+    "firebase_url": "https://swingersparadise-3eb9c.firebaseio.com",
+    "project_id": "swingersparadise-3eb9c",
+    "storage_bucket": "swingersparadise-3eb9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686511134534:android:f2e0a6d9442ece69",
+        "android_client_info": {
+          "package_name": "swingersparadise.app.solutions.novatech.pro.swingersparadise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686511134534-um4n8e85kto9jqe6p8an4bt44b9c9qoa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "swingersparadise.app.solutions.novatech.pro.swingersparadise",
+            "certificate_hash": "63711d19957ee0f6e8d55a64a8eca3ea50e94420"
+          }
+        },
+        {
+          "client_id": "686511134534-uo1os349t22c5d41vscqbcjj05pmr599.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoQizTZ-Xz3_P6rPEm-L6pv4jDU5YwV0I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686511134534-uo1os349t22c5d41vscqbcjj05pmr599.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="9dp"
+    android:orientation="vertical"
+    android:id="@+id/parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+
+        android:tooltipText="The Name "
+        android:inputType="textPersonName"
+        android:id="@+id/name"
+        style="@style/SwingersEditTextStyle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Surname"
+
+        android:tooltipText="Surname"
+        android:inputType="text"
+        android:id="@+id/surname"
+        style="@style/SwingersEditTextStyle"/>
+
+
+    <Spinner
+        android:id="@+id/marital_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+
+
+        android:tooltipText="Age"
+        android:inputType="number"
+        android:id="@+id/age"
+        style="@style/SwingersEditTextStyle"/>
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+
+
+        />
+
+    <Spinner
+        android:id="@+id/build"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+
+
+        />
+    <Spinner
+    android:id="@+id/ethnicity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:spinnerMode="dropdown"
+
+
+    />
+    <Spinner
+        android:id="@+id/body_part"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+
+
+        />
+
+    <Spinner
+        android:id="@+id/hair_colour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+
+
+        />
+
+    <Spinner
+        android:id="@+id/smoking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+
+
+        />
+
+    <Spinner
+        android:id="@+id/drinking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+
+
+        />
+
+</LinearLayout>
+</ScrollView>

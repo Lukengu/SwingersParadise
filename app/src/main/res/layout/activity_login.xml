@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/app_bg"
+    android:id="@+id/main_content">
+
+    <View
+        android:background="@color/colorBlack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:alpha=".7"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/activity_vertical_long_margin"
+        android:id="@+id/app_logo"/>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:padding="@dimen/activity_vertical_margin"
+            app:contentPadding="10dp"
+            app:cardBackgroundColor="@color/colorDark"
+            app:layout_constraintTop_toBottomOf="@id/app_logo"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:alpha=".9"
+            android:id="@+id/cardView"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAccent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                style="@style/SwingersEditTextStyle"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:inputType="textEmailAddress"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                style="@style/SwingersEditTextStyle"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:inputType="textPassword"
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:id="@+id/reset_password"/>
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight=".5"
+                        android:text="SIGNIN"
+                        android:onClick="email_sign_in"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+
+            android:background="@drawable/facebook"
+
+            android:layout_marginRight="9dp"
+            android:layout_weight=".5"
+            android:scaleType="centerCrop"
+            android:onClick="facebook_login"
+
+            />
+
+        <ImageView
+            android:layout_height="35dp"
+            android:layout_width="0dp"
+            android:background="@drawable/google"
+            android:layout_weight=".5"
+            android:scaleType="centerCrop"
+            android:onClick="google_signin"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height='45dp'
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorChocolate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:alpha=".9"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/register_link"
+            android:layout_gravity="center_vertical"
+            android:onClick="open_register"/>
+
+    </LinearLayout>
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

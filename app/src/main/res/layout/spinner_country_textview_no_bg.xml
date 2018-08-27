@@ -1,0 +1,26 @@
+
+
+<LinearLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+   >
+<ImageView
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:scaleType="fitXY"
+    android:id="@+id/flag"/>
+
+<TextView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:gravity="left|center_vertical"
+    android:padding="5dip"
+    android:id="@+id/country_name"
+    android:textColor="@color/colorPrimary"
+    />
+
+</LinearLayout>
