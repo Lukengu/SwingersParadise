@@ -26,7 +26,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="@dimen/activity_vertical_long_margin"
+        android:layout_marginTop="6dp"
         android:id="@+id/app_logo"/>
 
 
@@ -39,7 +39,11 @@
             app:contentPadding="10dp"
             app:cardBackgroundColor="@color/colorDark"
             app:layout_constraintTop_toBottomOf="@id/app_logo"
-            android:layout_margin="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+
             android:alpha=".9"
             android:id="@+id/cardView"
             >
@@ -110,36 +114,54 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_margin="@dimen/activity_vertical_margin"
         app:layout_constraintTop_toBottomOf="@id/cardView"
+        android:id="@+id/social_1"
         >
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="35dp"
-
-            android:background="@drawable/facebook"
-
-            android:layout_marginRight="9dp"
-            android:layout_weight=".5"
-            android:scaleType="centerCrop"
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@drawable/facebook_btn"
             android:onClick="facebook_login"
+            android:text="LOGIN WITH FACEBOOK"
+            android:layout_marginBottom="3sp"
 
             />
 
-        <ImageView
-            android:layout_height="35dp"
-            android:layout_width="0dp"
-            android:background="@drawable/google"
-            android:layout_weight=".5"
-            android:scaleType="centerCrop"
+        <Button
+            android:layout_height="34dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/google_btn"
+
+            android:text="LOGIN WITH GOOGLE"
+            android:onClick="google_signin"
+            android:layout_marginBottom="3sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@drawable/twitter_btn"
+            android:onClick="twitter_signin"
+            android:text="LOGIN WITH TWITTER"
+            android:layout_marginBottom="3sp"
+
+
+            />
+
+        <Button
+            android:layout_height="34dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/primary_btn"
+            android:text="LOGIN WITH YOUR MOBILE NUMBER"
             android:onClick="google_signin"
             />
 
 
 
     </LinearLayout>
+
 
 
 
@@ -171,6 +193,13 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/button_twitter_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:visibility="gone"/>
 
 

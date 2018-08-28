@@ -48,6 +48,35 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="FacebookbuttonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/skia</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/facebook_btn</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="GooglebuttonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/skia</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/google_btn</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TwitterbuttonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/skia</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/twitter_btn</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="PrimarybuttonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/skia</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/primary_btn</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

@@ -10,4 +10,14 @@
     <color name="colorTransparent">#00000000</color>
     <color name="colorChocolate">#222222</color>
     <color name="colorDark">#000000</color>
+
+    <color name="facebook_dark">#3c5993</color>
+
+
+    <color name="twitter">#55acee</color>
+    <color name="google_dark">#cb4023</color>
+    <color name="google_light">#d95033</color>
+    <color name="facebook_light">#3b5999</color>
 </resources>
+
+

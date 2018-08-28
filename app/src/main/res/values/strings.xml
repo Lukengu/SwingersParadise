@@ -6,6 +6,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">NBVLQYjEnlfCAkGHPIyTLVr8j</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">juEHjeP7rVKPrqgw2y99Ek0UqB2qQh3bN2CDlARfshM1YXOxTM</string>
     <string-array name="marital_status">
         <item>Marital Status</item>
         <item>Single</item>
